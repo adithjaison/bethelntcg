@@ -48,6 +48,8 @@
     <div class="text-center mx-auto mb-5" style="max-width: 600px;">
         <h1 class="display-5 text-uppercase mb-4">Contact Us</h1>
     </div>
+    <form method="post">
+        {% csrf_token %}
     <div class="row gx-0 align-items-center">
         <div class="col-lg-6 mb-5 mb-lg-0" style="height: 600px;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.6547780760393!2d-3.0115455844111403!3d53.367332980840544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b2745b6e01839%3A0x612e38d0a496ef96!2sHighfield%20Church%20Rock%20Ferry!5e0!3m2!1sen!2suk!4v1680790815639!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -74,6 +76,7 @@
             </div>
         </div>
     </div>
+    </form>
 </div>
 
 {% endblock %}
