@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container-fluid py-6 px-5">
+    <div class="row g-5">
+        <div class="col-lg-7">
+            <h1 class="display-5 text-uppercase mb-4">THIS IS <span class="text-primary">OUR STORY</span></h1>
+            <h4 class="text-uppercase mb-3 text-body">We are a Pentecostal Church under Church of God, United Kingdom and European Union.</h4>
+            <p>Each member of our Church has walked a different in their life. Our roads converged when we started walking with God. Come to our Church, speak to our members and hear our testimonies. Hear the stories of how God has touched our lives.</p>
+            <p>In Acts 2:46-47 we read that, everyday the people who believed in Jesus would meet and have communion. We also read that they were all glad in their hearts and God added to their numbers daily, those who were being saved. This is the experience we want to keep in our Church as God helps us grow. We want other to experience the love and joy we have in Christ.</p>
+            <p class="mb-4">To know more about our core values and commitment to Christ, read our Declaration of Faith.</p>
+            <a class="btn btn-primary py-3 px-5" href="{% url 'declaration' %}">Declaration of Faith.</a>
+        </div>
+        <div class="col-lg-5 pb-5" style="min-height: 400px;">
+            <div class="position-relative bg-dark-radial h-100 ms-5">
+                <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="img/about.jpg" style="object-fit: cover;">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
